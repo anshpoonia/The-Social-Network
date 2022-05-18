@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.create-main-body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 41fr 55fr;
+}
+
+.create-display-image{
+    background-image: url("./people - 2.png");
+    background-size: cover;
+}
+
+.create-elements-holder{
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 5fr 0.7fr 1fr 1fr 2fr 2fr 2fr 2fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-heading{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-heading svg{
+    align-self: end;
+}
+
+.create-page-message{
+    grid-row: 3/4;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1D1538;
+}
+
+.create-status-message{
+    grid-row: 4/5;
+    color: #FB5B63;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.create-form{
+    grid-row: 5/10;
+
+    margin-top: 4rem;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 0.7fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.create-form input{
+    border: none;
+    background-color: rgba(118,142,156,0.1);
+    color: #1D1538;
+    height: 4.4rem;
+    width: 28rem;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+}
+
+.create-form input:focus{
+    outline: none;
+}
+
+.create-form input:hover{
+    border: 3px solid rgba(29,21,56,0.2);
+    background: none;
+}
+
+.create-form input::placeholder{
+    opacity: 0.8;
+    color: #1D1538;
+}
+
+.create-email-box-holder{
+    align-self: end;
+}
+
+.create-password-box-holder{
+    align-self: start;
+}
+
+.create-term-holder{
+    align-self: start;
+    display: flex;
+    align-items: center;
+}
+
+.create-term-holder input{
+    height: 2rem;
+    width: 2rem;
+}
+
+.terms-message{
+    font-size: 1.2rem;
+    margin-left: 2rem;
+}
+
+.terms-message a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fa3434;
+}
+
+.create-submit-button{
+    align-self: start;
+}
+
+.create-submit-button button{
+    background-color: #1D1538;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    height: 4.4rem;
+    width: 28rem;
+    font-size: 1.8rem;
+}
+
+.login-message{
+    grid-row: 11/12;
+    align-self: center;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1D1538;
+}
+
+.login-message a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fa3434;
+}

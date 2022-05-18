@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.data{
+    font-family: monospace;
+    position: absolute;
+    width: 95%;
+    font-size: 1.2rem;
+    white-space: pre-wrap;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+h5{
+    font-size: 1.2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}

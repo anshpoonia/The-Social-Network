@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.login-main-body{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 55fr 41fr;
+}
+
+.login-display-image{
+    background-image: url("./background.png");
+    background-size: cover;
+}
+
+.login-elements-holder{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 5fr 0.5fr 1fr 1fr 2fr 2fr 2fr 2fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-heading{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.logo-heading svg{
+    align-self: end;
+}
+
+.login-page-message{
+    grid-row: 3/4;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1D1538;
+}
+
+.login-status-message{
+    grid-row: 4/5;
+    color: #FB5B63;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.login-form{
+    grid-row: 5/9;
+
+    margin-top: 5rem;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form input{
+    border: none;
+    background-color: rgba(118,142,156,0.1);
+    color: #1D1538;
+    height: 4.4rem;
+    width: 28rem;
+    border-radius: 1rem;
+    padding-left: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.login-form input:focus{
+    outline: none;
+}
+
+.login-form input::placeholder{
+    opacity: 0.7;
+    color: #1D1538;
+}
+
+.login-form input:hover{
+    border: 3px solid rgba(29,21,56,0.2);
+    background: none;
+}
+
+.login-username-box-holder{
+    align-self: end;
+}
+
+.login-forgot-password{
+    text-align: end;
+    margin-top: 1rem;
+    align-self: start;
+}
+
+.login-forgot-password a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #fa3434;
+}
+
+.login-submit-button{
+    align-self: start;
+}
+
+.login-submit-button button{
+    background-color: #1D1538;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    height: 4.4rem;
+    width: 28rem;
+    font-size: 1.8rem;
+}
+
+.create-account-message{
+    grid-row: 10/11;
+    align-self: center;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #1D1538;
+}
+
+.create-account-message a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: #fa3434;
+}
