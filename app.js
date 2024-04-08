@@ -15,8 +15,8 @@ const currentUsers = {}
 const otpPending = {}
 const userDetailsPending = {}
 
-const PostgresURI = "postgres://uazxmkryvfhxnd:5e3cc9c6a59f2316e1a11307ddadd209933cb46f1b9a5c0fc331a63c51f000f9@ec2-54-220-14-54.eu-west-1.compute.amazonaws.com:5432/dgoiagutvh0rf";
-const MongoDBURI = "mongodb+srv://admin:admin1@cluster0.krtas.mongodb.net/socialNetwork?retryWrites=true&w=majority";
+const PostgresURI = "";
+const MongoDBURI = "";
 
 const templatePath = path.join(__dirname, './template/view');
 const partialPath = path.join(__dirname, './template/partial');
@@ -30,8 +30,8 @@ const MAILTRANSPORTER = nodemailer.createTransport({
         rejectUnauthorized: false,
     },
     auth:{
-        user: "thesocialnetworkproject8@gmail.com",
-        pass: 'thenetwork'
+        user: "email",
+        pass: 'password'
     }
 });
 const MONGODBCLIENT = new MongoClient(MongoDBURI);
